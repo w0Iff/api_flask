@@ -142,7 +142,7 @@ def check_user_name_palindrome():
 
         is_palindrome = cleaned_user_name == cleaned_user_name[::-1]
 
-        return jsonify({'nazwa_osoby': nazwa_osoby, 'is_palindrome': is_palindrome})
+        return jsonify({'nazwa_osoby': nazwa_osoby, 'jest palindromem': is_palindrome})
     except Exception as e:
         return jsonify({'blad': str(e)})
 
